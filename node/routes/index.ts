@@ -2,7 +2,8 @@ import { method } from '@vtex/api'
 import { createDocument } from '../middlewares/vbase/CreateDocument'
 import { getDocument } from '../middlewares/vbase/getDocument'
 import { deleteDocument } from '../middlewares/vbase/deleteDocument'
-import { RickandMorty } from '../middlewares/RickandMorty'
+import { RickandMortyById } from '../middlewares/RickandMorty/RickandMortyById'
+import { RickandMortyByName } from '../middlewares/RickandMorty/RickandMortyByName'
 
 export const routes = {
   createDocument: method({
@@ -14,7 +15,10 @@ export const routes = {
   deleteDocument: method({
     DELETE: [deleteDocument],
   }),
-  RickandMorty: method({
-    GET: [RickandMorty],
+  RickandMortyById: method({
+    GET: [RickandMortyById],
+  }),
+  RickandMortyByName: method({
+    GET: [RickandMortyByName],
   }),
 }

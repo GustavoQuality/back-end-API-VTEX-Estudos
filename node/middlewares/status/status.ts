@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 export async function status(ctx: Context, next: () => Promise<unknown>) {
   const {
     state: { code },

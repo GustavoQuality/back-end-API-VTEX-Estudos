@@ -13,7 +13,11 @@ export default class RickandMorty extends ExternalClient {
     })
   }
 
-  public getRickandMorty(id: string) {
+  public getById(id: string) {
     return this.http.get(`/${id}`)
+  }
+
+  public searchByName(name: string) {
+    return this.http.get(`/?name=${name}`)
   }
 }
