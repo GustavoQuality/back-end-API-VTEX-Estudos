@@ -23,6 +23,11 @@
     "deleteDocument": {
       "path": "/delete-document",
       "public": true
+    },
+
+    "RickandMorty": {
+      "path": "/rickandmorty/character/:id",
+      "public": true
     }
   }
 }
