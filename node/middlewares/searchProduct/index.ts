@@ -15,7 +15,7 @@ export default async function searchProduct(
   const { productId } = params
 
   if (!productId) {
-    throw new Error('productId is required')
+    throw new Error('ID do produto é obrigatório para a realização da busca')
   }
 
   try {
