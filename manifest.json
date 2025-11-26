@@ -43,8 +43,8 @@
     {
       "name": "outbound-access",
       "attrs": {
-        "host": "portal.vtexcommercestable.com.br",
-        "path": "/api/tenant/tenants"
+        "host": "acctglobal.vtexcommercestable.com.br",
+        "path": "*"
       }
     },
     {
@@ -79,5 +79,22 @@
       "name": "vbase-read-write"
     }
   ],
+  "settingsSchema": {
+    "title": "backend Example Settings",
+    "description": "Settings for Service Example",
+    "type": "object",
+    "properties": {
+      "appKeyExample": {
+        "type": "string",
+        "description": "Um exemplo de chave appkey",
+        "default": "vtexappkey-acctglobal-OUNTJH"
+      },
+      "appTokenExample": {
+        "type": "string",
+        "description": "Um exemplo de chave token",
+        "default": "TWXAQTZVQLUMZRBLIHZKMSBRRVMAMXLNDHKBOLVDVKKXHQRGDUWMVEXYPTODPPBLBXQPKQEESSYMGXLXADMDAHGOTTIKYUBHAVQYKZJWHXCPVEJNLTDMFQIPQQYGIJEY"
+      }
+    }
+  },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

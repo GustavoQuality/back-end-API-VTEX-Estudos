@@ -32,6 +32,11 @@
     "RickandMortyByName": {
       "path": "/rickandmorty/character/name/:name",
       "public": true
+    },
+
+    "searchProductID":{
+      "path":"/gustavo-get-searchProductID/:productId",
+      "public": true
     }
   }
 }
